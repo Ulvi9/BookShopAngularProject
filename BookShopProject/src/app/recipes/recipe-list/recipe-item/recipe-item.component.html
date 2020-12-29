@@ -1,0 +1,13 @@
+
+<a href="#" class="list-group-item mt-2 " style="color: black"
+(click)="OnSelected()">
+  <div class="d-flex">
+    <div class="mr-2">
+      <h5>{{recipe.name}}</h5>
+      <p>{{recipe.description}}</p>
+    </div>
+    <div>
+      <img class="img-responsive" src="{{recipe.imagePath}}" [src]="recipe.imagePath" alt=""style="max-height: 70px;border-radius: 50px">
+    </div>
+  </div>
+</a>
