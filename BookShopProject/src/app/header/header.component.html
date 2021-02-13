@@ -6,20 +6,20 @@
   </button>
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
-      <li class="nav-item ">
-        <a class="nav-link" href="#" (click)="OnSelect('recipe')">Recipes </a>
+      <li  routerLinkActive="active" >
+        <a class="nav-link" routerLink="/recipes" >Recipes </a>
       </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#" (click)="OnSelect('shopping-list')">Shopping List</a>
+      <li routerLinkActive="active">
+        <a class="nav-link" routerLink="/shopping-list">Shopping List</a>
       </li>
       <li class="nav-item dropdown" appDropdown>
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown"
+        <a class="nav-link dropdown-toggle"style="cursor: pointer"
            role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           Manage
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="#">Save Data</a>
-          <a class="dropdown-item" href="#">Fetch Data</a>
+          <a class="dropdown-item" style="cursor: pointer">Save Data</a>
+          <a class="dropdown-item" style="cursor: pointer">Fetch Data</a>
         </div>
       </li>
     </ul>
