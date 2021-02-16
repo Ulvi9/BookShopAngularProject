@@ -23,9 +23,15 @@ export class RecipeService {
         new Ingredient("Onion",2)
       ])
   ];
+  setRecipe(recipes:Recipe[]){
+    this.recipes=recipes;
+  }
   getRecipes(){
     return this.recipes.slice();
-  }
+  };
+  getRecipe(index:number){
+    return this.recipes[index];
+  };
   addIngredientsShoppingList(ingredients:Ingredient[]){
     this.shoppingListService.addIngredients(ingredients);
 

@@ -17,6 +17,9 @@ export class ShoppingListComponent implements OnInit {
       .subscribe((ingredients:Ingredient[])=>{
         this.ingredients=ingredients;
       })
-  }
+  };
 
+  onEditItem(index: number) {
+  this.shopListService.startEditing.next(index);
+  }
 }

@@ -1,6 +1,7 @@
 
 <a  class="list-group-item mt-2 " style="cursor: pointer;color: black"
-(click)="OnSelected()">
+[routerLink]="[index]" routerLinkActive="active"
+>
   <div class="d-flex">
     <div class="mr-2">
       <h5>{{recipe.name}}</h5>
