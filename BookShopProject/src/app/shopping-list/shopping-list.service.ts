@@ -20,6 +20,10 @@ export class ShoppingListService {
   getIngredient(index:number){
     return this.ingredients[index];
   }
+  deleteItem(index:number){
+    this.ingredients.splice(index,1);
+    this.ingredientsChanged.emit(this.ingredients.slice());
+  }
  addIngredient(ingredient:Ingredient){
    this.ingredients.push(ingredient);
    this.ingredientsChanged.emit(this.ingredients.slice());
